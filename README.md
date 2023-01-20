@@ -3,7 +3,7 @@
 Technologies used:
 
 - Node.js
-- Exprees.js
+- Express.js
 - Mongodb/ Mongoose
 - EJS (template engine)
   ![alt text](./demo.png)
