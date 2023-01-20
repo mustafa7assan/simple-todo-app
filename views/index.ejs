@@ -27,8 +27,8 @@
         <% if (todos.length > 0) { %> <% for (let i = 0; i < todos.length; i++
         ){ %>
         <div class="todo-card">
-          <p><%- todos[i] -%></p>
-          <a href="<%-`delete/${i}`%>">Delete</a>
+          <p><%- todos[i].text -%></p>
+          <a href="<%-`delete/${todos[i]['_id']}`%>">Delete</a>
         </div>
         <% } %> <% } else { %>
         <div class="todo-card">There are no todos yet</div>
