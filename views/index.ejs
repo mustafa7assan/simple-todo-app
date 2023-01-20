@@ -4,38 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Todo</title>
   </head>
   <body>
     <div class="container">
       <h1 class="logo">TODO APP</h1>
       <div class="form-container">
-        <h2 class="form-title">Enter Todo text</h2>
-        <form action="/" class="form-todo">
+        <h2 class="form-title">Enter Todo Text</h2>
+        <form action="/create" class="form-todo" method="post">
           <input type="text" name="todo" id="todo" />
           <button>Add</button>
         </form>
       </div>
       <div class="todos">
+        <% if (todos.length > 0) { %> <% for (let i = 0; i < todos.length; i++
+        ){ %>
         <div class="todo-card">
-          <p>Todo Text</p>
-          <button>Delete</button>
+          <p><%- todos[i] -%></p>
+          <a href="<%-`delete/${i}`%>">Delete</a>
         </div>
-        <div class="todo-card">
-          <p>Todo Text</p>
-          <button>Delete</button>
-        </div>
-        <div class="todo-card">
-          <p>Todo Text</p>
-          <button>Delete</button>
-        </div>
+        <% } %> <% } else { %>
+        <div class="todo-card">There are no todos yet</div>
+        <% } %>
       </div>
     </div>
   </body>
