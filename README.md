@@ -1,3 +1,9 @@
 # simple-todo-app
 
-![alt text](./demo.png)
+Technologies used:
+
+- Node.js
+- Exprees.js
+- Mongodb/ Mongoose
+- EJS (template engine)
+  ![alt text](./demo.png)
