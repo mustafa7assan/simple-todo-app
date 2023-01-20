@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #c79f49;
+  color: white;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 70%;
+  margin: 50px auto;
+  padding: 30px 10px;
+  background-color: #8560bc;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.form-container {
+  background-color: #3d214a;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.form-title {
+  margin-bottom: 10px;
+  color: #c79f49;
+}
+.form-todo {
+  width: 100%;
+  display: flex;
+  margin-bottom: 5px;
+}
+.form-todo input {
+  flex: 2;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.form-todo button {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 600;
+  color: white;
+  background-color: #57c39f;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+.todos {
+  background-color: white;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.todo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3d214a;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.todo-card button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 600;
+  color: white;
+  background-color: #3d214a;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
